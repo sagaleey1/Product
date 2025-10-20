@@ -41,20 +41,20 @@ public class Product {
         
         // main method
         public static void main (String[] args){
-            Product p1 = new Product("P101", "Laptop", 500.0, 10);
-            Product p2 = new Product("P202", "Phone", 300.0, 15);
+            Product p1 = new Product("P101", "Laptop", 500, 10);
+            Product p2 = new Product("P202", "Phone", 300, 15);
 
 
             // product 1
             System.out.println("Product 1:"+ p1.getName());
-            System.out.println("Original Price: $"+ p1.getPrice());
-            System.out.println("Price After" + p1.getDiscount()+" % Discount: $"+ p1.priceAfterDiscount());
-            System.out.println("Final price with 5% vat:$" + p1.finalPrice());
+            System.out.println("Original Price: "+ p1.getPrice());
+            System.out.println("Price After" + p1.getDiscount()+"Discount:"+ p1.priceAfterDiscount());
+            System.out.println("Final price with 5% vat: " + p1.finalPrice());
         
             // product 2
             System.out.println("Product 2:"+ p2.getName());
             System.out.println("Original Price: "+ p2.getPrice());
-            System.out.println("Price After"+ p2.getDiscount() + "  Discount:  "+ p2.priceAfterDiscount());
+            System.out.println("Price After"+ p2.getDiscount() + " Discount: "+ p2.priceAfterDiscount());
             System.out.println("Final price with 5% vat: " + p2.finalPrice());
             
 
@@ -64,6 +64,7 @@ public class Product {
 
 
     }
+
 
 
 
